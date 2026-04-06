@@ -9,6 +9,9 @@
 
 body {
   font-family: "Poppins", sans-serif;
+  background: linear-gradient(to right, #e0eafc, #cfdef3); 
+  margin: 0;
+  color: #333;
 }
 
 html {
@@ -429,4 +432,72 @@ footer {
 
 footer p {
   text-align: center;
+}
+
+/* SAFE ENHANCEMENTS */
+
+/* Navbar slight blur */
+nav {
+  background: rgba(255,255,255,0.6);
+  backdrop-filter: blur(8px);
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+/* Card hover */
+.details-container {
+  transition: 0.3s ease;
+}
+
+.details-container:hover {
+  transform: translateY(-5px);
+}
+
+/* Button hover */
+.btn:hover {
+  transform: scale(1.05);
+}
+
+/* Smooth section spacing fix */
+section {
+  border-radius: 1rem;
+}
+
+#chatbot {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  width: 260px;
+  font-size: 12px;
+  z-index: 9999;
+}
+
+#chat-header {
+  background: #333;
+  color: white;
+  padding: 10px;
+  cursor: pointer;
+  border-radius: 10px 10px 0 0;
+}
+
+#chat-body {
+  display: none;
+  background: white;
+  border: 1px solid #ccc;
+  padding: 10px;
+}
+
+#chat-box {
+  height: 150px;
+  overflow-y: auto;
+  margin-bottom: 5px;
+}
+
+#chat-input {
+  width: 70%;
+}
+
+#chatbot button {
+  width: 25%;
 }
